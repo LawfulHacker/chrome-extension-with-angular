@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "Chrome Extension using Angular",
+  "description": "chrome extension angular",
+  "author": "Sergio Garcia",
+  "icons": {
+    "16": "favicon.ico",
+    "48": "favicon.ico",
+    "128": "favicon.ico"
+  },
+  "content_security_policy": "default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'",
+  "background": {
+    "page": "index.html#/background",
+    "persistent": false
+  },
+  "options_page": "index.html#/options",
+  "browser_action": {
+    "default_icon": {
+      "19": "favicon.ico",
+      "38": "favicon.ico"
+    },
+    "default_title": "browser action title",
+    "default_popup": "index.html#/popup"
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ]
+}
